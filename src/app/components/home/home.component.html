@@ -1,0 +1,8 @@
+<div>
+    <input type="text" [(ngModel)]="userName" />
+    <div>{{userName}}</div>
+    <button on-click="onButtonClick()">Submit</button>
+<ng-container *ngFor="let weather of wath">
+    <div *ngIf="weather">"{{ weather.main }}"</div>
+</ng-container>
+</div>
