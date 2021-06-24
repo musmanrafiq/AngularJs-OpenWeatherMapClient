@@ -1,4 +1,4 @@
-# Example1
+# AngularJs- OpenWeatherMap Client
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
 
@@ -7,7 +7,7 @@ Live demo of master branch can be visited at [https://angular-openweathermap-cli
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Clone the repository and Run `npm install` to restore all the packages, then Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
