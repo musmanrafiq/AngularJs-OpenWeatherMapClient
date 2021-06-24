@@ -28,16 +28,16 @@ export class HomeComponent implements OnInit {
     })
   }
   searchWeather(search?: string): void {
+    this.loading = true;
     this.httpService.getWeather(search)
     .subscribe((response: APIResponse<Weather>) => {
       this.wath = response.weather;
-      debugger;
+      this.loading = false;
     });
   }
 
-
-
-  private _userName: string = "Usman";
+  private _userName: string = "Pakistan";
+  loading: boolean = false;
 
   get userName(): string {
     return this._userName;

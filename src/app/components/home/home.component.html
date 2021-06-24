@@ -1,8 +1,13 @@
-<div>
-    <input type="text" [(ngModel)]="userName" />
-    <div>{{userName}}</div>
-    <button on-click="onButtonClick()">Submit</button>
-<ng-container *ngFor="let weather of wath">
-    <div *ngIf="weather">"{{ weather.main }}"</div>
+<div class="setupPanel">
+    <input class="searchfield" type="text" [(ngModel)]="userName" />
+    <button class="searchbtn" on-click="onButtonClick()">Find Weather</button>
+
+    <ng-container *ngIf="loading">
+    <div style="margin-top: 30px; margin-left: 100px;"><img src="../../../assets/loading.gif" /></div>
 </ng-container>
+    <div style="margin-top: 30px;">
+        <ng-container *ngFor="let weather of wath">
+            <div *ngIf="weather">"{{ weather.main }}"</div>
+        </ng-container>
+    </div>
 </div>

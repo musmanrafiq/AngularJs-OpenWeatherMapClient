@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-setup',
@@ -7,15 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SetupComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit(): void {
   }
 
-  search: string = "kk";
+  _searchQuery: string = "";
+
+  set searchQuery(val: string){
+    this._searchQuery = val;
+  }
 
   onButtonClick(){
-    let a = this.search;
-    debugger;
+    let apiKey = this._searchQuery;
+    if(apiKey){
+      localStorage.setItem('apiKey', apiKey);
+      this._router.navigate(['home'])
+    }
   }
 }

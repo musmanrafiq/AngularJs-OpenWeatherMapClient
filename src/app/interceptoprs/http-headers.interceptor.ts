@@ -5,7 +5,12 @@ import { Observable } from "rxjs";
 @Injectable()
 export class HttpHeadersInterceptor implements HttpInterceptor {
 
-    constructor() {}
+    apiKey: string = "";
+    constructor() {
+        const key = localStorage.getItem('apiKey');
+        if(key)
+        this.apiKey = key;
+    }
 
     intercept (
         req: HttpRequest<any>,
@@ -14,7 +19,7 @@ export class HttpHeadersInterceptor implements HttpInterceptor {
         req = req.clone({
             setHeaders: {},
             setParams:{
-                appid: 'API-Key'
+                appid: this.apiKey
             }
         });
         return next.handle(req);
