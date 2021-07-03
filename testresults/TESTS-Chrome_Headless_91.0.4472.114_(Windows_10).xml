@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 91.0.4472.114 (Windows 10)" package="" timestamp="2021-07-03T11:38:35" id="0" hostname="DESKTOP-DJQQPD1" tests="5" errors="0" failures="0" time="0.12">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/91.0.4472.114 Safari/537.36"/>
+  </properties>
+  <testcase name="HttpService should be created" time="0.02" classname="Chrome_Headless_91_0_4472_114_(Windows_10).HttpService"/>
+  <testcase name="HomeComponent should create" time="0.066" classname="Chrome_Headless_91_0_4472_114_(Windows_10).HomeComponent"/>
+  <testcase name="SetupComponent should create" time="0.013" classname="Chrome_Headless_91_0_4472_114_(Windows_10).SetupComponent"/>
+  <testcase name="AppComponent should create the app" time="0.013" classname="Chrome_Headless_91_0_4472_114_(Windows_10).AppComponent"/>
+  <testcase name="AppComponent should have as title 'Example1'" time="0.008" classname="Chrome_Headless_91_0_4472_114_(Windows_10).AppComponent"/>
+  <system-out>
+    <![CDATA[Chrome Headless 91.0.4472.114 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input'.'
+,Chrome Headless 91.0.4472.114 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'input'.'
+,Chrome Headless 91.0.4472.114 (Windows 10) ERROR: 'NG0304: 'router-outlet' is not a known element:
+1. If 'router-outlet' is an Angular component, then verify that it is part of this module.
+2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 91.0.4472.114 (Windows 10) ERROR: 'NG0304: 'router-outlet' is not a known element:
+1. If 'router-outlet' is an Angular component, then verify that it is part of this module.
+2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
