@@ -32,4 +32,4 @@ jobs:
         uses: EnricoMi/publish-unit-test-result-action/composite@v1
         if: always()
         with:
-          report_paths: '**/build/testresults/TEST-*.xml'
+          report_paths: '**/testresults/TEST-*.xml'
