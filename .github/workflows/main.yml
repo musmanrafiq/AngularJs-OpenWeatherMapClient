@@ -21,7 +21,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Test
-        run: npm run test  --reporters=junit
+        run: ng test --karma-config=karma.conf.js --reporters junit
       - name: Publish Unit Test Results
         uses: EnricoMi/publish-unit-test-result-action/composite@v1
         if: always()
